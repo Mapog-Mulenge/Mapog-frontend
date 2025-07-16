@@ -13,7 +13,7 @@ export default function App() {
   }, []);
 
   const fetchApiData = () => {
-    fetch("https://mapog.railway.app/api/some-endpoint")
+    fetch("https://mapog-msms-api-production.up.railway.app/")
       .then((res) => res.json())
       .then((data) => setApiData(data))
       .catch(() => setApiData({ error: "API call failed" }));
